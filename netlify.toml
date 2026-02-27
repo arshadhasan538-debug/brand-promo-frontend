@@ -1,0 +1,6 @@
+/ (repo root)
+│─ netlify.toml   ✅
+│
+└─ brand-promo-frontend/
+   ├─ index.html
+   ├─ thank-you.html
