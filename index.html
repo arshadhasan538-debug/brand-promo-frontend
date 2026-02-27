@@ -4,86 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brand Promotion Platform</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0f172a;
-      color: #fff;
+      color: #f8fafc;
     }
-    .container {
-      padding: 20px;
-      max-width: 420px;
+    header {
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #2563eb, #9333ea);
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 600px;
       margin: auto;
     }
-    h1 {
-      font-size: 26px;
+    h2 {
       margin-bottom: 10px;
     }
     p {
-      color: #cbd5f5;
-      line-height: 1.5;
+      opacity: 0.9;
     }
     .card {
-      background: #1e293b;
-      padding: 16px;
-      border-radius: 12px;
-      margin: 16px 0;
-    }
-    .price {
-      font-size: 22px;
-      color: #38bdf8;
-    }
-    .btn {
-      display: block;
-      text-align: center;
-      background: #38bdf8;
-      color: #000;
-      padding: 14px;
+      background: #020617;
+      padding: 20px;
       border-radius: 10px;
-      text-decoration: none;
+      margin-bottom: 20px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+    }
+    input, textarea {
+      background: #0f172a;
+      color: white;
+      border: 1px solid #334155;
+    }
+    button {
+      background: #22c55e;
+      color: black;
       font-weight: bold;
-      margin-top: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
     }
     footer {
       text-align: center;
-      font-size: 12px;
-      color: #94a3b8;
-      margin-top: 30px;
+      padding: 20px;
+      opacity: 0.6;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>🚀 Brand Promotion Platform</h1>
-    <p>We help brands grow by promoting them to the right audience.</p>
 
-    <div class="card">
-      <h3>📢 What We Do</h3>
-      <p>
-        Companies pay us to promote their brand, product, or service using
-        digital platforms and targeted reach.
-      </p>
-    </div>
+<header>
+  <h1>Brand Promotion Platform 🚀</h1>
+  <p>We help brands grow with real promotion</p>
+</header>
 
-    <div class="card">
-      <h3>💼 Pricing</h3>
-      <p><b>Basic Promotion</b></p>
-      <p class="price">₹499</p>
-      <p>Social media + basic exposure</p>
-
-      <p><b>Premium Promotion</b></p>
-      <p class="price">₹1499</p>
-      <p>High reach + priority promotion</p>
-    </div>
-
-    <a class="btn" href="https://wa.me/917869588084">
-      📲 Contact on WhatsApp
-    </a>
-
-    <footer>
-      © 2026 BrandPromo • Powered by Netlify
-    </footer>
+<section>
+  <div class="card">
+    <h2>Why Choose Us?</h2>
+    <p>✔ Social media promotion</p>
+    <p>✔ Influencer marketing</p>
+    <p>✔ Affordable pricing</p>
   </div>
+
+  <div class="card">
+    <h2>Contact Us 📩</h2>
+
+    <!-- NETLIFY CONTACT FORM -->
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Tell us about your brand" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 BrandPromo. All rights reserved.
+</footer>
+
 </body>
   </html>
