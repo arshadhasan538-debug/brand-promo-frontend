@@ -1,6 +1,2 @@
-/ (repo root)
-│─ netlify.toml   ✅
-│
-└─ brand-promo-frontend/
-   ├─ index.html
-   ├─ thank-you.html
+[build]
+  publish = "brand-promo-frontend"
