@@ -1,23 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Brand Promotion Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+    }
+    .container {
+      padding: 20px;
+      max-width: 420px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #cbd5f5;
+      line-height: 1.5;
+    }
+    .card {
+      background: #1e293b;
+      padding: 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    .price {
+      font-size: 22px;
+      color: #38bdf8;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      background: #38bdf8;
+      color: #000;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 16px;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 30px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; padding: 20px;">
-  <h1>Brand Promotion Platform 🚀</h1>
-  <p id="status">Loading backend status...</p>
+<body>
+  <div class="container">
+    <h1>🚀 Brand Promotion Platform</h1>
+    <p>We help brands grow by promoting them to the right audience.</p>
 
-  <script>
-    fetch("https://brand-promo-platform.onrender.com")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("status").innerText = data;
-      })
-      .catch(() => {
-        document.getElementById("status").innerText =
-          "Backend not reachable ❌";
-      });
-  </script>
+    <div class="card">
+      <h3>📢 What We Do</h3>
+      <p>
+        Companies pay us to promote their brand, product, or service using
+        digital platforms and targeted reach.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💼 Pricing</h3>
+      <p><b>Basic Promotion</b></p>
+      <p class="price">₹499</p>
+      <p>Social media + basic exposure</p>
+
+      <p><b>Premium Promotion</b></p>
+      <p class="price">₹1499</p>
+      <p>High reach + priority promotion</p>
+    </div>
+
+    <a class="btn" href="https://wa.me/917869588084">
+      📲 Contact on WhatsApp
+    </a>
+
+    <footer>
+      © 2026 BrandPromo • Powered by Netlify
+    </footer>
+  </div>
 </body>
-</html>
+  </html>
