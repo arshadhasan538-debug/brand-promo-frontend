@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Brand Promotion Platform</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+  <h1>Brand Promotion Platform 🚀</h1>
+  <p id="status">Loading backend status...</p>
+
+  <script>
+    fetch("https://brand-promo-platform.onrender.com")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("status").innerText = data;
+      })
+      .catch(() => {
+        document.getElementById("status").innerText =
+          "Backend not reachable ❌";
+      });
+  </script>
+</body>
+</html>
